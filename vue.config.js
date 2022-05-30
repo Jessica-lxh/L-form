@@ -1,5 +1,5 @@
 module.exports = {
-  devServer: {
-    publicPath: env !== "development" ? "./" : "/",
- }
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/L-form/'
+  : '/'
 }
